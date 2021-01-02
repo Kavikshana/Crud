@@ -23,23 +23,22 @@
         </div>
     @endif
 
-    <form action="{{route('users.update',$user->id)}}" method="POST">
+    <form action="{{route('users.update',$user->id) }}" method="POST">
         @csrf
-        @method('PUT)
+        @method('PUT')
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>UserName:</strong>
-                    <input type="text" name="UserName" value="" class="form-control" placeholder="UserName">
+                    <input type="text" name="UserName" class="form-control" placeholder="UserName">
                 </div>
             </div>
             
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>password</strong>
-                    <input type="number" name="password" class="form-control" placeholder=""
-                        value="">
+                    <input type="number" name="password" class="form-control" placeholder="password">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

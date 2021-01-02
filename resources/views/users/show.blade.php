@@ -17,14 +17,14 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>UserName:</strong>
-
+                {{ $user->UserName }}
             </div>
         </div>
         
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>password</strong>
-
+                {{ $user->password }}
             </div>
         </div>
         

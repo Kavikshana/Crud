@@ -31,14 +31,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>UserName:</strong>
-                    <input type="text" name="UserName" value="" class="form-control" placeholder="UserName">
+                    <input type="string" name="UserName" value="" class="form-control" placeholder="UserName">
                 </div>
             </div>
             
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>password</strong>
-                    <input type="number" name="password" class="form-control" placeholder="password"
+                    <input type="password" name="password" class="form-control" placeholder="password"
                         >
                 </div>
             </div>

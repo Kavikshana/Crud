@@ -40,9 +40,9 @@ class UserController extends Controller
             'password' => 'required',
         ]);
     
-        $user = new User;
+       
         User::create($request->all());
-        $user->save();
+       
      
         return redirect()->route('users.index')
                         ->with('success','User created successfully.');
@@ -56,7 +56,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.show',compact('users'));
+        return view('users.show',compact('user'));
     } 
      
     /**
@@ -67,7 +67,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('users.edit',compact('users'));
+        return view('users.edit',compact('user'));
     }
     
     /**
